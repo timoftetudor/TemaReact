@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -10,9 +11,9 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 50px;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -21,6 +22,67 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.Category-Options {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
+
+.Category-Name {
+  width: 100%;
+  margin: 0;
+  padding-top: 10px;
+  border: 1px solid black;
+}
+
+.Search-Bar {
+  width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
+
+.Search-Text {
+  width: 1200px;
+  margin: 0;
+  padding-top: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.Category-Title {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.Category-Title-Text {
+  font-weight: bold;
+}
+
+.Category-Data {
+  /* margin: 20px 0; */
+  display: flex;
+  flex-direction: column;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.Item-Data {
+  width: 100%;
+  transform: scale(0.7);
+}
+
+.Item-Title {
+  margin: 0 auto;
+}
+
+.Back-DrinkComponent {
+  float: left;
+  height: 30px;
+  width: 75px;
 }
 
 @keyframes App-logo-spin {
